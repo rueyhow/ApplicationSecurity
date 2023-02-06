@@ -1,0 +1,92 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FreshFarmMarket
+build_property.RootNamespace = FreshFarmMarket
+build_property.ProjectDir = D:\sch stuff\y2\Sem 2\AS\FreshFarmMarket\FreshFarmMarket\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\sch stuff\y2\Sem 2\AS\FreshFarmMarket\FreshFarmMarket
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/google.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZ29vZ2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Login/forgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cZm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Login/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Login/logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cbG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Login/OTP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cT1RQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Login/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_CaptChaInput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXB0Q2hhSW5wdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_CaptchaScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXB0Y2hhU2NyaXB0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_FlashMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9GbGFzaE1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/user/information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlclxpbmZvcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/sch stuff/y2/Sem 2/AS/FreshFarmMarket/FreshFarmMarket/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lkki4pa5qw

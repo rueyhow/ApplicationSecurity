@@ -1,0 +1,160 @@
+﻿@page
+@model FreshFarmMarket.Pages.Register.IndexModel
+@{
+    ViewData["Title"] = "Register";
+}
+<form class="mt-3" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    @*FullName*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.FullName"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.FullName" />
+            <span asp-validation-for="user.FullName" class="text-danger"></span>
+        </div>
+    </div>
+    @*Credit Card Number*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.CreditCardNo"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.CreditCardNo" />
+            <span asp-validation-for="user.CreditCardNo" class="text-danger"></span>
+        </div>
+    </div>
+    @*radio buttons*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.Gender"></label>
+        <div class="col-sm-10 d-flex align-items-center">
+            <div class="form-check form-check-inline">
+                @Html.RadioButtonFor(m => m.user.Gender, "M",
+                new {@class = "form-check-input"})
+                <label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                @Html.RadioButtonFor(m => m.user.Gender, "F",
+                new {@class = "form-check-input"})
+                <label class="form-check-label">Female</label>
+            </div>
+            <span asp-validation-for="user.Gender" class="text-danger"></span>
+        </div>
+    </div>
+    @*MobileNo*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.MobileNo"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.MobileNo" />
+            <span asp-validation-for="user.MobileNo" class="text-danger"></span>
+        </div>
+    </div>
+    @*Address*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.Address"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.Address" />
+            <span asp-validation-for="user.Address" class="text-danger"></span>
+        </div>
+    </div>
+    @*Email*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.Email"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.Email" />
+            <span asp-validation-for="user.Email" class="text-danger"></span>
+        </div>
+    </div>
+
+    @*Password*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.Password"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.Password" onkeyup="checkPassword()" id="passwordText"/>
+            <span asp-validation-for="user.Password" class="text-danger"></span>
+            <span id="pwCheck" style="color:aquamarine">Avoid using easily guessed / commonly used passwords when registering!</span>
+        </div>
+    </div>
+    @*Confirm Password*@
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="confirmPassword1"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" onkeyup="confirmPassword()" id="confirmPass" name="confirmPassword1" required/>
+            <span asp-validation-for="confirmPassword1" class="text-danger"></span>
+            <span id="confirmPw" style="color:red"></span>
+        </div>
+    </div>
+    @*PhotoPath*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="Upload"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="hidden" asp-for="user.PhotoPath" value="none"/>
+            <input class="form-control" type="file" asp-for="Upload" accept=".jpg"/>
+            <span asp-validation-for="Upload" class="text-danger"></span>
+        </div>
+    </div>
+    @*AboutMe*@
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label" asp-for="user.AboutMe"></label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" asp-for="user.AboutMe" />
+            <span asp-validation-for="user.AboutMe" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div>
+        <input type="submit" value="Add" class="btn btn-primary" />
+        <a class="btn btn-secondary ms-2" href="/Employees">Cancel</a>
+    </div>
+</form>
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+     }
+        <script type="text/javascript">
+
+            function checkPassword() {
+                // get string of password text input
+                var str = document.getElementById("passwordText").value;
+                var errorSpan = document.getElementById("pwCheck");
+                if (str.length <= 12) {
+                    errorSpan.innerHTML = "Password must be at least 12 characters";
+                    errorSpan.style.color = "Red";
+                }
+                else if (str.search(/[0-9]/) == -1) {
+                    errorSpan.innerHTML = "Password must contain at least 1 number";
+                    errorSpan.style.color = "Red";
+                }
+                else if (str.search(/[a-z]/) == -1) {
+                    errorSpan.innerHTML = "Password must contain at least 1 lowercase letter";
+                    errorSpan.style.color = "Red";
+                }
+                else if (str.search(/[A-Z]/) == -1) {
+                    errorSpan.innerHTML = "Password must contain at least 1 Uppercase letter";
+                    errorSpan.style.color = "Red";
+                }
+                else if (str.search(/[^0-9a-zA-z]/) == -1) {
+                    errorSpan.innerHTML = "Password must contain at least 1 special character";
+                    errorSpan.style.color = "Red";
+                }
+                else {
+                    errorSpan.innerHTML = "Good Password";
+                errorSpan.style.color = "aquamarine";
+                }
+            };
+
+            function confirmPassword(){
+                var str = document.getElementById("confirmPass").value;
+                var str1 = document.getElementById("passwordText").value;
+                var errorSpan = document.getElementById("confirmPw");
+                if (str != str1){
+                    errorSpan.innerHTML = "Passwords do not match";
+                    errorSpan.style.color = "Red";
+                }
+                else {
+                errorSpan.innerHTML = "Passwords matched!";
+                errorSpan.style.color = "aquamarine";
+                }
+            };
+        </script>
+    }

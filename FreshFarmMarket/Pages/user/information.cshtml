@@ -1,0 +1,83 @@
+﻿@page
+@model FreshFarmMarket.Pages.user.informationModel
+@{
+    ViewData["Title"] = "User Information Page";
+}
+@section Styles{
+    <link href="@Url.Content("~/css/style.css")" rel="stylesheet" type="text/css" />
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <div class="main-body">
+
+        <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="@Model.currentUser.PhotoPath" alt="Admin" class="rounded-circle" width="150">
+                            <div class="mt-3">
+                                <h4>@Model.currentUser.FullName</h4>
+                                <p class="text-secondary mb-1">Full Stack Developer</p>
+                                <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                @Model.currentUser.FullName
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                @Model.currentUser.UserName
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Credit Card Number</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                @Model.currentUser.CreditCardNo
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Mobile</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                @Model.currentUser.MobileNo
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Address</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                @Model.currentUser.Address
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
